@@ -39,11 +39,11 @@
                         <div class="menu-title">
                             меню
                         </div>
-                        <div class="popup-menu-btn">
+                        <button class="popup-menu-btn">
                             <div class="line"></div>
                             <div class="line"></div>
                             <div class="line"></div>
-                        </div>
+                        </button>
                     </div>
                     <nav class="header-nav">
                         <ul class="main-menu">
@@ -83,14 +83,40 @@
 </html>
 
 
-<section class="main-banner">
+<section class="main-banner" aria-labelledby="banner-title">
     <div class="container">
         <div class="banner-content">
-            <h1>CОЗДАДИМ <span>ПРОДАЮЩИЙ САЙТ</span> С КОНВЕРСИЕЙ  ОТ 5% ЗА 7 ДНЕЙ </h1>
+
+            <h1 id="banner-title">
+                Сайт на WordPress, который <span>приносит клиентов</span><br>
+                <span class="subtitle">для экспертов, коучей и бизнесов</span>
+            </h1>
+
             <div class="banner-description">
-                <p>От идеи до первых продаж с сайта проведем вас за руку.  Все под ключ: разработка, продвижение, поддержка</p>
+                <p>
+                    Создаю быстрые и конверсионные сайты под ключ —
+                    из вашего дизайна или с нуля.
+                    Уже через 14 дней ваш сайт будет принимать заявки,
+                    работать в CRM и быть готов к продвижению.
+                </p>
             </div>
-            <a href="#" data-src="modal-form" class="btn btn-red open-modal-dialog">Получить предложение</a>
+
+            <a
+                    href="#"
+                    data-src="modal-form"
+                    class="btn btn-red open-modal-dialog"
+                    aria-label="Обсудить проект — получить бесплатную консультацию"
+            >
+                Обсудить проект
+            </a>
+
+            <div class="banner-trust">
+                <p>
+                    <small>
+                        ✅ Чистый код | ✅ SEO-фундамент | ✅ Поддержка 30 дней
+                    </small>
+                </p>
+            </div>
         </div>
     </div>
 </section>
@@ -319,7 +345,15 @@
         <div class="title-wrapper">
             <h2>Наши проекты</h2>
             <div class="title-description">
-                <p>Разработали свыше 60 проектов за 10 лет.</p>
+                <p>
+                    За последние 3 года создал <strong>27 сайтов для экспертов, коучей и клиник</strong>.
+                    Каждый — с фокусом на конверсию, скорость и готовность к продвижению.
+                </p>
+            </div>
+            <div class="title-description">
+                <p>
+                    Работаю так, чтобы сайт был <strong>готов к росту</strong>, а не просто "сделан".
+                </p>
             </div>
         </div>
         <div class="row">
@@ -531,7 +565,7 @@
                 </div>
             </div>
             <div class="accordion-item">
-                <div class="accordion-item-header">Сколько стоит создание сайта?</div>
+                <button class="accordion-item-header">Сколько стоит создание сайта?</button>
                 <div class="accordion-item-content">
                     <div class="accordion-content-wrapper">
                         <p>
@@ -544,7 +578,7 @@
                 </div>
             </div>
             <div class="accordion-item">
-                <div class="accordion-item-header">Сколько стоит создание сайта?</div>
+                <button class="accordion-item-header">Сколько стоит создание сайта?</button>
                 <div class="accordion-item-content">
                     <div class="accordion-content-wrapper">
                         <p>
@@ -557,7 +591,7 @@
                 </div>
             </div>
             <div class="accordion-item">
-                <div class="accordion-item-header">Сколько стоит создание сайта?</div>
+                <button class="accordion-item-header">Сколько стоит создание сайта?</button>
                 <div class="accordion-item-content">
                     <div class="accordion-content-wrapper">
                         <p>
@@ -570,7 +604,7 @@
                 </div>
             </div>
             <div class="accordion-item">
-                <div class="accordion-item-header">Сколько стоит создание сайта?</div>
+                <button class="accordion-item-header">Сколько стоит создание сайта?</button>
                 <div class="accordion-item-content">
                     <div class="accordion-content-wrapper">
                         <p>
@@ -601,23 +635,35 @@
 
 <section class="callback">
     <div class="container">
-        <div class="title-wrapper">
-            <h2>Давайте начнем с консультации, это бесплатно</h2>
-            <ul>
-                <li>Уточним цель</li>
-                <li>Разработаем стратегию продвижения</li>
-                <li>Подготовим для вас персональное КП</li>
-            </ul>
-        </div>
-        <div class="form-wrapper">
-            <div class="form-title">Где вам удобнее общаться?</div>
-            <form action="/">
-
-            </form>
-            <div class="callback-socials">
-                <div class="socials-title">или напишите, мы онлайн</div>
-                <div class="socials-wrapper">
-                    <a class="social-link social-telegram" href="#"></a>
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-m-12">
+                <div class="title-wrapper">
+                    <h2>Давайте начнем с консультации, это бесплатно</h2>
+                    <ul>
+                        <li>Уточним цель</li>
+                        <li>Разработаем стратегию продвижения</li>
+                        <li>Подготовим для вас персональное КП</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-m-12">
+                <div class="form-wrapper">
+                    <div class="form-title">Где вам удобнее общаться?</div>
+                    <form action="/#wpcf7-f88-o1" method="post" class="wpcf7-form init" aria-label="Контактная форма" novalidate="novalidate" data-status="init">
+                        <fieldset class="hidden-fields-container"><input type="hidden" name="_wpcf7" value="88"><input type="hidden" name="_wpcf7_version" value="6.1.1"><input type="hidden" name="_wpcf7_locale" value="ru_RU"><input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f88-o1"><input type="hidden" name="_wpcf7_container_post" value="0"><input type="hidden" name="_wpcf7_posted_data_hash" value="">
+                        </fieldset>
+                        <p><span class="wpcf7-form-control-wrap" data-name="fullname"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control footer-input margin-b-20" aria-required="true" aria-invalid="false" placeholder="Ваше имя" value="" type="text" name="fullname"></span><br>
+                            <span class="wpcf7-form-control-wrap" data-name="email"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email form-control footer-input margin-b-20" aria-required="true" aria-invalid="false" placeholder="Email" value="" type="email" name="email"></span><br>
+                            <span class="wpcf7-form-control-wrap" data-name="comments"><textarea cols="40" rows="10" maxlength="2000" class="wpcf7-form-control wpcf7-textarea form-control footer-input margin-b-30" aria-invalid="false" placeholder="Опишите ваш проект кратко (дизайн есть? нужна миграция? интеграции?)" name="comments"></textarea></span><br>
+                            <input class="wpcf7-form-control wpcf7-submit has-spinner btn-theme btn-theme-sm btn-base-bg text-uppercase" type="submit" value="Получить план проекта"><span class="wpcf7-spinner"></span>
+                        </p><div class="wpcf7-response-output" aria-hidden="true"></div>
+                    </form>
+                    <div class="callback-socials">
+                        <div class="socials-title">или напишите, мы онлайн</div>
+                        <div class="socials-wrapper">
+                            <a class="social-link social-telegram" href="#"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -674,8 +720,12 @@
             <div class="col-lg-3 col-md-6 col-m-12">
                 <div class="footer-title">Информация</div>
                 <div class="footer-description">
-                    <p>Вся информация, размещённая на сайте, носит ознакомительный характер и может отличаться от действительности.</p>
-                    <p>Вся информация, размещённая на сайте, носит ознакомительный характер и может отличаться от действительности.</p>
+                    <p>
+                        Работаю с экспертами, коучами, клиниками и бизнесами, где сайт — основной канал привлечения.
+                    </p>
+                    <p>
+                        Пишите в <a href="https://t.me/wergutinec" target="_blank">Telegram</a> — отвечаю оперативно.
+                    </p>
                 </div>
             </div>
         </div>
