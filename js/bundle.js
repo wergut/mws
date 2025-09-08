@@ -142,3 +142,31 @@ var swiper1 = new Swiper(".offer-slider", {
     }
   }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const btn = document.querySelector('.btn-page-up');
+  const scrollThreshold = 100;
+  let isScrolling = false;
+
+  window.addEventListener('scroll', function() {
+    if (!isScrolling) {
+      window.requestAnimationFrame(function() {
+        if (window.pageYOffset > scrollThreshold) {
+          btn.classList.add('visible');
+        } else {
+          btn.classList.remove('visible');
+        }
+        isScrolling = false;
+      });
+      isScrolling = true;
+    }
+  });
+
+  btn.addEventListener('click', function(e) {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+});
